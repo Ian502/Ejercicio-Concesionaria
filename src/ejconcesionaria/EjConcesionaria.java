@@ -22,7 +22,7 @@ public class EjConcesionaria {
         ArrayList<Vehiculo>  autosEnVenta = new ArrayList<>();
         InitAutos(autosEnVenta); // inicializamos los autos al arraylist
         MostrarAutos(autosEnVenta); // mostramos los autos del arraylist
-        System.out.println( "=======================================\n" ); // Separador
+        System.out.println( "=======================================" ); // Separador
         EsCaroBarato(autosEnVenta); // hacemos las comparaciones Caro Barato, modelo contiene Y       
     }
     
@@ -90,11 +90,13 @@ public class EjConcesionaria {
                 indiceY = i; // Se puede mejorar agregando los indíces a un arraylist, y después mostrándolos, en un forloop.
             }
         }
-        System.out.println( "Vehiculo más caro: " + AEV.get(indiceCaro).GetMarca() + " " + AEV.get(indiceCaro).GetModelo() + "\n"  ); 
-        System.out.println( "Vehiculo más barato: " + AEV.get(indiceBarato).GetMarca() + " " + AEV.get(indiceBarato).GetModelo() + "\n" );
+        System.out.println( "Vehiculo más caro: " + AEV.get(indiceCaro).GetMarca() + " " + AEV.get(indiceCaro).GetModelo()  ); 
+        System.out.println( "Vehiculo más barato: " + AEV.get(indiceBarato).GetMarca() + " " + AEV.get(indiceBarato).GetModelo() );
         if (indiceY != -1){ // si cambió el índice, mostralo
-            System.out.println( "Vehiculo que contiene en el modelo la letra 'Y': " + AEV.get(indiceY).GetMarca() + " " + AEV.get(indiceY).GetModelo() +  " $" + AEV.get(indiceY).GetPrecioFormat() + "\n" );
+            System.out.println( "Vehiculo que contiene en el modelo la letra 'Y': " + AEV.get(indiceY).GetMarca() + " " + AEV.get(indiceY).GetModelo() +  " $" + AEV.get(indiceY).GetPrecioFormat() );
         }
+        else
+            System.out.println( "No hay vehiculos que contengan la letra 'Y' en el modelo." );
     }
     
     //Extra to do, mostrar ordenados por precio de mayor a menor los autos

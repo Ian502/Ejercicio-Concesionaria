@@ -63,6 +63,6 @@ public class Moto implements Vehiculo{
     
     @Override
     public void MostrarInfo(){
-        System.out.println("Marca: " + this.GetMarca() + " // Modelo: " + this.GetModelo() + " // PCilindrada: " + this.GetCilindrada() + "cc // Precio: $" + this.GetPrecioFormat() + "\n");
+        System.out.println("Marca: " + this.GetMarca() + " // Modelo: " + this.GetModelo() + " // PCilindrada: " + this.GetCilindrada() + "cc // Precio: $" + this.GetPrecioFormat());
     }
 }

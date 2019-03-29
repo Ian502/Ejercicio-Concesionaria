@@ -63,6 +63,6 @@ public class Auto implements Vehiculo {
 
     @Override
     public void MostrarInfo(){
-        System.out.println("Marca: " + this.GetMarca() + " // Modelo: " + this.GetModelo() + " // Puertas: " + this.GetPuertas() + " // Precio: $" + this.GetPrecioFormat()+ "\n");
+        System.out.println("Marca: " + this.GetMarca() + " // Modelo: " + this.GetModelo() + " // Puertas: " + this.GetPuertas() + " // Precio: $" + this.GetPrecioFormat());
     }
 }
