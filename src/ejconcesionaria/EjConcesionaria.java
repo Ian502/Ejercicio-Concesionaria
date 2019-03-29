@@ -97,8 +97,5 @@ public class EjConcesionaria {
         }
     }
     
-    //Extra
-    static void OrdenarPorPrecio(ArrayList<Vehiculo> AEV){
-        
-    }
+    //Extra to do, mostrar ordenados por precio de mayor a menor los autos
 }
